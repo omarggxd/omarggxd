@@ -1,0 +1,801 @@
+-- Gui to Lua
+
+-- Version: 2.16
+
+-- Instances:
+
+local EZSONICEXERPSCRIPT = Instance.new("ScreenGui")
+
+local Page1 = Instance.new("Frame")
+
+local SansEye = Instance.new("TextButton")
+
+local TextLabel = Instance.new("TextLabel")
+
+local Sanseyesonic = Instance.new("TextButton")
+
+local TextLabel_2 = Instance.new("TextLabel")
+
+local BehindSallyexeseyes = Instance.new("TextButton")
+
+local TextLabel_3 = Instance.new("TextLabel")
+
+local Next = Instance.new("TextButton")
+
+local Pages = Instance.new("TextLabel")
+
+local Close = Instance.new("ImageButton")
+
+local Page2 = Instance.new("Frame")
+
+local TRUEEGG = Instance.new("TextButton")
+
+local Next_2 = Instance.new("TextButton")
+
+local Pages_2 = Instance.new("TextLabel")
+
+--Properties:
+
+EZSONICEXERPSCRIPT.Name = "EZSONIC.EXERPSCRIPT"
+
+EZSONICEXERPSCRIPT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+EZSONICEXERPSCRIPT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Page1.Name = "Page1"
+
+Page1.Parent = EZSONICEXERPSCRIPT
+
+Page1.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+Page1.Position = UDim2.new(0.514637887, 0, 0.140583575, 0)
+
+Page1.Size = UDim2.new(0, 199, 0, 315)
+
+SansEye.Name = "Sans Eye"
+
+SansEye.Parent = Page1
+
+SansEye.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+SansEye.Position = UDim2.new(0, 0, 0.161904767, 0)
+
+SansEye.Size = UDim2.new(0, 200, 0, 50)
+
+SansEye.Font = Enum.Font.SourceSans
+
+SansEye.Text = "Sans Eye for Tails "
+
+SansEye.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+SansEye.TextSize = 14.000
+
+TextLabel.Parent = SansEye
+
+TextLabel.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+TextLabel.Position = UDim2.new(0, 0, 0.800000012, 0)
+
+TextLabel.Size = UDim2.new(0, 198, 0, 25)
+
+TextLabel.Font = Enum.Font.SourceSans
+
+TextLabel.Text = "be exe then normal when executed"
+
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel.TextSize = 14.000
+
+Sanseyesonic.Name = "Sans eye sonic"
+
+Sanseyesonic.Parent = Page1
+
+Sanseyesonic.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+Sanseyesonic.Position = UDim2.new(0, 0, 0.368253976, 0)
+
+Sanseyesonic.Size = UDim2.new(0, 199, 0, 50)
+
+Sanseyesonic.Font = Enum.Font.SourceSans
+
+Sanseyesonic.Text = "Sans Eye for Sonic"
+
+Sanseyesonic.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Sanseyesonic.TextSize = 14.000
+
+TextLabel_2.Parent = Sanseyesonic
+
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+TextLabel_2.Position = UDim2.new(0, 0, 0.800000012, 0)
+
+TextLabel_2.Size = UDim2.new(0, 198, 0, 26)
+
+TextLabel_2.Font = Enum.Font.SourceSans
+
+TextLabel_2.Text = "be exe then normal when executed + add smile for more"
+
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel_2.TextScaled = true
+
+TextLabel_2.TextSize = 14.000
+
+TextLabel_2.TextWrapped = true
+
+BehindSallyexeseyes.Name = "Behind Sally.exe's eyes"
+
+BehindSallyexeseyes.Parent = Page1
+
+BehindSallyexeseyes.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+BehindSallyexeseyes.Position = UDim2.new(0, 0, 0.577777803, 0)
+
+BehindSallyexeseyes.Size = UDim2.new(0, 198, 0, 64)
+
+BehindSallyexeseyes.Font = Enum.Font.SourceSans
+
+BehindSallyexeseyes.Text = "Behind Sally.exe's eyes"
+
+BehindSallyexeseyes.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+BehindSallyexeseyes.TextSize = 14.000
+
+TextLabel_3.Parent = BehindSallyexeseyes
+
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+TextLabel_3.Position = UDim2.new(0, 0, 0.800000012, 0)
+
+TextLabel_3.Size = UDim2.new(0, 198, 0, 26)
+
+TextLabel_3.Font = Enum.Font.SourceSans
+
+TextLabel_3.Text = "Just be EXE"
+
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextLabel_3.TextScaled = true
+
+TextLabel_3.TextSize = 14.000
+
+TextLabel_3.TextWrapped = true
+
+Next.Name = "Next"
+
+Next.Parent = Page1
+
+Next.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+Next.Position = UDim2.new(1.00113392, 0, 0.410887957, 0)
+
+Next.Size = UDim2.new(0, 56, 0, 50)
+
+Next.Font = Enum.Font.SourceSans
+
+Next.Text = "Next"
+
+Next.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Next.TextSize = 14.000
+
+Pages.Name = "Pages"
+
+Pages.Parent = Next
+
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+Pages.BackgroundTransparency = 1.000
+
+Pages.Position = UDim2.new(-2.66581631, 0, -3.50000024, 0)
+
+Pages.Size = UDim2.new(0, 100, 0, 50)
+
+Pages.Font = Enum.Font.SourceSans
+
+Pages.Text = "Page = 1/2"
+
+Pages.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Pages.TextScaled = true
+
+Pages.TextSize = 14.000
+
+Pages.TextWrapped = true
+
+Close.Name = "Close"
+
+Close.Parent = Page1
+
+Close.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+Close.Position = UDim2.new(0.823972762, 0, -0.0530932248, 0)
+
+Close.Size = UDim2.new(0, 22, 0, 16)
+
+Close.Image = "rbxassetid://2665356190"
+
+Page2.Name = "Page2"
+
+Page2.Parent = EZSONICEXERPSCRIPT
+
+Page2.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+Page2.Position = UDim2.new(0.513586342, 0, 0.140583575, 0)
+
+Page2.Size = UDim2.new(0, 199, 0, 315)
+
+Page2.Visible = false
+
+TRUEEGG.Name = "T R U E E  G G"
+
+TRUEEGG.Parent = Page2
+
+TRUEEGG.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+TRUEEGG.Position = UDim2.new(0, 0, 0.368253976, 0)
+
+TRUEEGG.Size = UDim2.new(0, 199, 0, 50)
+
+TRUEEGG.Font = Enum.Font.SourceSans
+
+TRUEEGG.Text = "True E G G"
+
+TRUEEGG.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TRUEEGG.TextScaled = true
+
+TRUEEGG.TextSize = 14.000
+
+TRUEEGG.TextWrapped = true
+
+Next_2.Name = "Next"
+
+Next_2.Parent = Page2
+
+Next_2.BackgroundColor3 = Color3.fromRGB(88, 127, 255)
+
+Next_2.Position = UDim2.new(1.00113392, 0, 0.410887957, 0)
+
+Next_2.Size = UDim2.new(0, 56, 0, 50)
+
+Next_2.Visible = false
+
+Next_2.Font = Enum.Font.SourceSans
+
+Next_2.Text = "Back"
+
+Next_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Next_2.TextSize = 14.000
+
+Pages_2.Name = "Pages"
+
+Pages_2.Parent = Next_2
+
+Pages_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+Pages_2.BackgroundTransparency = 1.000
+
+Pages_2.Position = UDim2.new(-2.66581631, 0, -3.50000024, 0)
+
+Pages_2.Size = UDim2.new(0, 100, 0, 50)
+
+Pages_2.Font = Enum.Font.SourceSans
+
+Pages_2.Text = "Page = 1/2"
+
+Pages_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Pages_2.TextScaled = true
+
+Pages_2.TextSize = 14.000
+
+Pages_2.TextWrapped = true
+
+-- Scripts:
+
+local function GYZPVQQ_fake_script() -- SansEye.Script 
+
+	local script = Instance.new('Script', SansEye)
+
+	function onclick()
+
+		local name = game:GetService("Players").LocalPlayer.Name
+
+		print(name)
+
+	
+
+		game.workspace[name].head.pupil_1:Destroy()
+
+		--be.exe
+
+		wait(4)
+
+		--be normal lol
+
+		game.Workspace[name].head.iris_1:Destroy()
+
+	end
+
+	
+
+	script.Parent.MouseButton1Click:connect(onclick)
+
+	
+
+end
+
+coroutine.wrap(GYZPVQQ_fake_script)()
+
+local function SBMG_fake_script() -- Sanseyesonic.Script 
+
+	local script = Instance.new('Script', Sanseyesonic)
+
+	function onclick()
+
+		local name = game:GetService("Players").LocalPlayer.Name
+
+	
+
+		game.Workspace[name].head.iris_1:Destroy()
+
+	end
+
+	
+
+	script.Parent.MouseButton1Click:connect(onclick)
+
+	
+
+end
+
+coroutine.wrap(SBMG_fake_script)()
+
+local function YIMNVS_fake_script() -- BehindSallyexeseyes.Script 
+
+	local script = Instance.new('Script', BehindSallyexeseyes)
+
+	function onclick()
+
+		local name = game:GetService("Players").LocalPlayer.Name
+
+		game.workspace[name].head.i_eyes:Destroy()
+
+		wait(0.3)
+
+		game.workspace[name].head.i_eyes_blood:Destroy()
+
+	end
+
+end
+
+coroutine.wrap(YIMNVS_fake_script)()
+
+local function SSJVVV_fake_script() -- Page1.LocalScript 
+
+	local script = Instance.new('LocalScript', Page1)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+
+	--Put this inside of your Frame and configure the speed if you would like.
+
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+
+	
+
+	local UIS = game:GetService('UserInputService')
+
+	local frame = script.Parent
+
+	local dragToggle = nil
+
+	local dragSpeed = 0.25
+
+	local dragStart = nil
+
+	local startPos = nil
+
+	
+
+	local function updateInput(input)
+
+		local delta = input.Position - dragStart
+
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+
+	end
+
+	
+
+	frame.InputBegan:Connect(function(input)
+
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+
+			dragToggle = true
+
+			dragStart = input.Position
+
+			startPos = frame.Position
+
+			input.Changed:Connect(function()
+
+				if input.UserInputState == Enum.UserInputState.End then
+
+					dragToggle = false
+
+				end
+
+			end)
+
+		end
+
+	end)
+
+	
+
+	UIS.InputChanged:Connect(function(input)
+
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+
+			if dragToggle then
+
+				updateInput(input)
+
+			end
+
+		end
+
+	end)
+
+	
+
+end
+
+coroutine.wrap(SSJVVV_fake_script)()
+
+local function URADRK_fake_script() -- Next.Script 
+
+	local script = Instance.new('Script', Next)
+
+	function onclick()
+
+		local page1 = script.Parent.Parent.Parent.Page1
+
+		local pages = script.Parent.Pages
+
+		local page2 = script.Parent.Parent.Parent.Page2
+
+		if page1.Visible == true then
+
+			
+
+		
+
+	script.Parent.Visible = false
+
+			page1.Visible = true
+
+			page2.Visible = true
+
+			pages.Text = "Pages = 2/2"
+
+			script.Parent.Visible = false
+
+			script.Parent.Parent.Parent.Page2.Next.Visible = true
+
+		end
+
+		end
+
+	script.Parent.MouseButton1Click:connect(onclick)
+
+	
+
+end
+
+coroutine.wrap(URADRK_fake_script)()
+
+local function WXGNECK_fake_script() -- Close.LocalScript 
+
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		script.Parent.Parent.Parent:Destroy()
+
+	end)
+
+	
+
+end
+
+coroutine.wrap(WXGNECK_fake_script)()
+
+local function PIZCR_fake_script() -- TRUEEGG.RainbowText 
+
+	local script = Instance.new('Script', TRUEEGG)
+
+	local text = script.Parent
+
+	local add = 10
+
+	wait(1)
+
+	local k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(k/255,0/255,0/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	while true do
+
+	k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(255/255,k/255,0/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(255/255 - k/255,255/255,0/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(0/255,255/255,k/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(0/255,255/255 - k/255,255/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(k/255,0/255,255/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	k = 1
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(255/255,0/255,255/255 - k/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	while k <= 255 do
+
+	text.TextColor3 = Color3.new(255/255 - k/255,0/255,0/255)
+
+	k = k + add
+
+	wait()
+
+	end
+
+	end
+
+end
+
+coroutine.wrap(PIZCR_fake_script)()
+
+local function IHKNXK_fake_script() -- TRUEEGG.Script 
+
+	local script = Instance.new('Script', TRUEEGG)
+
+	function onclick()
+
+		local name = game:GetService("Players").LocalPlayer.Name
+
+		print(name)
+
+		game.Workspace[name].head:Destroy()
+
+		game.Workspace[name].arm1:Destroy()
+
+		game.Workspace[name].arm2:Destroy()
+
+		game.Workspace[name].leg1:Destroy()
+
+		game.Workspace[name].leg2:Destroy()
+
+		game.Workspace[name].Humanoid.HipHeight = 1
+
+	end
+
+	
+
+	script.Parent.MouseButton1Click:connect(onclick)
+
+	
+
+end
+
+coroutine.wrap(IHKNXK_fake_script)()
+
+local function FVABP_fake_script() -- Page2.LocalScript 
+
+	local script = Instance.new('LocalScript', Page2)
+
+	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+
+	--Put this inside of your Frame and configure the speed if you would like.
+
+	--Enjoy! Credits go to: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
+
+	
+
+	local UIS = game:GetService('UserInputService')
+
+	local frame = script.Parent
+
+	local dragToggle = nil
+
+	local dragSpeed = 0.25
+
+	local dragStart = nil
+
+	local startPos = nil
+
+	
+
+	local function updateInput(input)
+
+		local delta = input.Position - dragStart
+
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+
+	end
+
+	
+
+	frame.InputBegan:Connect(function(input)
+
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+
+			dragToggle = true
+
+			dragStart = input.Position
+
+			startPos = frame.Position
+
+			input.Changed:Connect(function()
+
+				if input.UserInputState == Enum.UserInputState.End then
+
+					dragToggle = false
+
+				end
+
+			end)
+
+		end
+
+	end)
+
+	
+
+	UIS.InputChanged:Connect(function(input)
+
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+
+			if dragToggle then
+
+				updateInput(input)
+
+			end
+
+		end
+
+	end)
+
+	
+
+end
+
+coroutine.wrap(FVABP_fake_script)()
+
+local function NAIQVRT_fake_script() -- Next_2.Script 
+
+	local script = Instance.new('Script', Next_2)
+
+	function onclick()
+
+		local page1 = script.Parent.Parent.Parent.Page1
+
+		local pages = script.Parent.Pages
+
+		local page2 = script.Parent.Parent.Parent.Page2
+
+		if page2.Visible == true then
+
+	
+
+	
+
+	
+
+			
+
+			page1.Visible = true
+
+			page2.Visible = false
+
+			pages.Text = "Pages = 1/2"
+
+			script.Parent.Text = "Back"
+
+			script.Parent.Visible = false
+
+			script.Parent.Parent.Parent.Page1.Next.Visible = true
+
+		end
+
+	
+
+	end
+
+	
+
+	script.Parent.MouseButton1Click:connect(onclick)
+
+	
+
+end
+
+coroutine.wrap(NAIQVRT_fake_script)()
