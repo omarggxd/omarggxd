@@ -1,0 +1,712 @@
+local gameid = game.PlaceId
+if(gameid == 6913960180) then
+local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/An28kaza/Kaza-Hub/main/Arrayfield'))()
+
+game.workspace.GamepassCharacter.Alphatale.gamepass:destroy()
+game.workspace.GamepassCharacter.ShadowSans.gamepass:destroy()
+game.workspace.Box.VantaBlackSans.gamepass:destroy()
+game.workspace.Character:GetChildren()[173].gamepass:destroy()
+game.workspace.Box.LoadingSans.gamepass:destroy()
+game.workspace.Box.LoadingSansGirlVersion.gamepass:destroy()
+game.workspace.GamepassCharacter:GetChildren()[9].gamepass:destroy()
+game.workspace.Box.VantaBlackSansDemonLOrd.gamepass:destroy()
+
+--Function
+_G.UCMTautofarm = false
+
+function UCMTautofarm()
+	while _G.UCMTautofarm == true do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(652.0986938476562, 120.48353576660156, 2725.77880859375)
+		wait()
+	end
+end
+
+local playerhead = game.Players.LocalPlayer.Character.Head
+local v = game.Workspace.Lobby.Head
+
+
+--Page
+ local Window = ArrayField:CreateWindow({
+    Name = "Kaza Hub",
+    LoadingTitle = "Welcome to Kaza Hub| 1.3",
+    LoadingSubtitle = "by An28kaza",
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil, -- Create a custom folder for your hub/game
+        FileName = "ArrayField"
+    },
+    Discord = {
+        Enabled = false,
+        Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+        RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+        Title = "Kaza Hub",
+        Subtitle = "Key System",
+        Note = "Lol i just make it for fun so key is: Bruh",
+        FileName = "ArrayFieldsKeys",
+        SaveKey = false,
+        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like ArrayField to get the key from
+        Key = {"Bruh"},
+        Actions = {
+            [1] = {
+                Text = 'Click here to copy the key link',
+                OnPress = function()
+
+                end,
+            }
+        },
+    }
+})
+
+local Main = Window:CreateTab("Main", 4483362458) -- Title, Image
+local Special = Window:CreateTab("Special") -- Title, Image
+local Illegal = Window:CreateTab("Illegal") -- Title, Image
+
+--Main
+local Section = Main:CreateSection("Farm",true)
+local Toggle = Main:CreateToggle({
+    Name = "Auto Farm",
+    CurrentValue = false,
+    Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+    Callback = function(Value)
+        _G.UCMTautofarm = Value
+        UCMTautofarm()
+    end,
+ })
+
+--Teleport
+local Section = Main:CreateSection("Teleport",true)
+local Button = Main:CreateButton({
+	Name = "Lobby",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-266.40887451171875, 79.45940399169922, 1702.7874755859375)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Gamepass",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(126.55037689208984, 185.75978088378906, 1731.853759765625)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Character",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-593.8616943359375, 80.19505310058594, 1746.8380126953125)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Special Character",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(153.97584533691406, 179.64002990722656, 2154.4521484375)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Obby1",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-262.5124206542969, 221.54754638671875, 2651.53369140625)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Obby2",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(659.3025512695312, 138.5530242919922, 2165.9755859375)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Snowdin",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-517.73046875, 9.286508560180664, -1587.1041259765625)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Antivoid",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2283.93994140625, -1.9262279272079468, -1539.4366455078125)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Judgement Hall",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(542.3554077148438, -13.228025436401367, 168.31573486328125)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Outer Place",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4993.49462890625, 441.239013671875, -6970.34228515625)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "City",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-512, 2809, -3478)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Waterfall",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2239.9951171875, 76.73269653320312, -704.5991821289062)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Hotland",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2630.19995, 72.3161011, 509.419006, -0.0327591598, 4.38127508e-08, 0.99946326, 7.29198391e-09, 1, -4.35972716e-08, -0.99946326, 5.85986015e-09, -0.0327591598)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Dusttrust Judgement Hall",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(709.960205078125, 238.98248291015625, -1979.4268798828125)
+	end,
+ })
+
+--Special
+local Section = Special:CreateSection("Gamepass Character",false)
+local Label = Special:CreateLabel("No Dust Evolution",Section)
+local Label = Special:CreateLabel("You Need To Press Many Times",Section)
+
+local Button = Special:CreateButton({
+	Name = "Shadow Sans",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(224.57821655273438, 181.8653564453125, 1679.376708984375)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Vantablack",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(225.71868896484375, 185.70977783203125, 1751.185791015625)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "AlphaCorrupted",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(524.184814453125, 173.0775909423828, 1417.8385009765625)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "AlphaCorrupted404",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(523.68994140625, 172.24423217773438, 1427.83935546875)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "LOADING",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(226.6802978515625, 186.11151123046875, 1774.673583984375)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Ten No Kami",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(222, 182, 1798)
+	end,
+ })
+Special:CreateSpacing(nil,10)
+
+local Section = Special:CreateSection("Skin Character",false)
+local Label = Special:CreateLabel("Some Skin",Section)
+local Label = Special:CreateLabel("You Need To Press Many Times",Section)
+
+local Button = Special:CreateButton({
+	Name = "Shadow but is Evil BF",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1182.9501953125, 112.42072296142578, 2136.25048828125)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Loading Sans [Onee San From] (Black Hair)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(497.0075988769531, 127.81153106689453, 1823.982666015625)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Loading Sans [Onee San From] (White Hair)",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(506.4725036621094, 127.87336730957031, 1823.610595703125)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Error Sans V2 [Girl Version]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-981.2767333984375, -33.162845611572266, 1066.7880859375)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Player With Sailor + Cat ear",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-439.1143798828125, -111.79874420166016, 1500.3770751953125)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Player WhiteDust Flower",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-421, -112, 1498)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Player [Hoshino]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-406, -112, 1497)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Player [Hoshino 3D]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-400, -112, 1497)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "TERROR [White]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-769.7811279296875, -29.351369857788086, 1812.0518798828125)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Error Sans V2 [But is you]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1000.9672241210938, -33.366241455078125, 1070.675048828125)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Error 404 V2 [Girl Version]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1411, -112, 2321)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Half Butterfly Error",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-725, -114, 1500)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Time Paradox [Girl Version]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1392, -114, 1940)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Alternate frisk [EYE]",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1225, 87, 1542)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Demon Lord VantaBlack Sans",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(501, 130, 1680)
+	end,
+ })
+
+local Button = Special:CreateButton({
+	Name = "Neutral Frisk [Epic Frisk] [IceDemon Girl] ",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1133, -95, 1524)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Neutral Frisk [Epic Frisk] [Butler] ",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1118, -95, 1522)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Neutral Frisk [Epic Frisk] [Maid Neutral Frisk] ",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1104, -95, 1518)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Neutral Frisk [Epic Frisk] [Maid Neutral Frisk blink] ",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1097, -95, 1518)
+	end,
+ })
+
+ local Button = Special:CreateButton({
+	Name = "Neutral Frisk [Epic Frisk] [BLOOD ROSE] ",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1133, -95, 1593)
+	end,
+ })
+
+--Illegal
+local Section = Illegal:CreateSection("100000000 HP!!!",false)
+local Label = Illegal:CreateLabel("This make you have HP like in the lobby",Section)
+local Label = Illegal:CreateLabel("This also play lobby music, pretty loud",Section)
+
+local Button = Illegal:CreateButton({
+	Name = "Active",
+	Callback = function()
+		v.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		wait()
+		v.CFrame = CFrame.new(-244.018845, 86.2766113, 1836.29431, -0.999990225, 0, -0.00448873406, 0, 1, 0, 0.00448873406, 0, -0.999990225)
+	end,
+ })
+end
+
+local gameid = game.PlaceId
+if(gameid == 9078157075) then
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-161, 18, -21)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-496, 18, 814)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1248, 18, -762)
+wait(0.1)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(249, 34, 476)
+
+--Page
+local Window = Rayfield:CreateWindow({
+	Name = "Kaza Hub",
+	LoadingTitle = "Welcome to Kaza Hub",
+	LoadingSubtitle = "by An28kaza",
+	ConfigurationSaving = {
+	   Enabled = false,
+	   FolderName = nil, -- Create a custom folder for your hub/game
+	   FileName = "Big Hub"
+	},
+	Discord = {
+	   Enabled = false,
+	   Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+	   RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+	   Title = "Sirius Hub",
+	   Subtitle = "Key System",
+	   Note = "Join the discord (discord.gg/sirius)",
+	   FileName = "SiriusKey",
+	   SaveKey = true,
+	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+	   Key = "Hello"
+	}
+ })
+--Page
+local Main = Window:CreateTab("Dangerous") -- Title, Image
+local Teleport = Window:CreateTab("Teleport") -- Title, Image
+local Section = Main:CreateSection("Wait the game fully loaded before use it")
+local Section = Main:CreateSection("Dangerous")
+
+--Function
+function UMOSunlockdoor()
+game.workspace.Doors:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["GP Door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace.other["Badge door"]:Destroy()
+workspace["Badge door"]:Destroy()
+workspace["Badge door"]:Destroy()
+end
+
+--Main
+local Button = Main:CreateButton({
+   Name = "😱DELETE ALL DOORS!!1!!!😳",
+   Callback = function()
+    UMOSunlockdoor()
+   end,
+})
+
+--Teleport
+local Button = Teleport:CreateButton({
+	Name = "Lobby",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(685, 49, -373)
+	end,
+ })
+
+ local Button = Teleport:CreateButton({
+	Name = "Character",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(380, 25, 4027)
+	end,
+ })
+
+ local Button = Teleport:CreateButton({
+	Name = "Gamepass and Event Character",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(330, 25, 3924)
+	end,
+ })
+
+ local Button = Teleport:CreateButton({
+	Name = "Snowdin",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(127.40448760986328, 32.532997131347656, 7.229017734527588)
+	end,
+ })
+
+ local Button = Teleport:CreateButton({
+	Name = "Accessories",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(509, 2185, 2002)
+	end,
+ })
+
+ local Button = Teleport:CreateButton({
+	Name = "Antovoid",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-150.38462829589844, 23.330360412597656, -812.9987182617188)
+	end,
+ })
+
+ local Button = Teleport:CreateButton({
+	Name = "The Doodle Sphere",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-115, 24, -715)
+	end,
+ })
+end
+
+if(gameid == 13754776367) then
+local ArrayField = loadstring(game:HttpGet('https://raw.githubusercontent.com/An28kaza/Kaza-Hub/main/Arrayfield'))()
+
+workspace.CHARACTERSTUFF["CHARACTER BOX"].ShadowSans.Buy.Aniti.ANITIgamepass:Destroy()
+
+--Function
+_G.UROTM = false
+_G.name = false
+local torso = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+function UROTM()
+spawn (function()
+	while _G.UROTM == true do
+for i, v in pairs(game:GetService("Workspace").CHEST:GetChildren()) do
+	if _G.UROTM == true then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+		wait(0.1)
+	end
+	end
+end
+end)
+end
+
+--Page
+local Window = ArrayField:CreateWindow({
+	Name = "Kaza Hub",
+	LoadingTitle = "Kaza Hub| 1.0",
+	LoadingSubtitle = "by An28kaza",
+	ConfigurationSaving = {
+	   Enabled = true,
+	   FolderName = nil, -- Create a custom folder for your hub/game
+	   FileName = "ArrayField"
+	},
+	Discord = {
+	   Enabled = false,
+	   Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+	   RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+	},
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+	   Title = "Untitled",
+	   Subtitle = "Key System",
+	   Note = "No method of obtaining the key is provided",
+	   FileName = "Key", -- It is recommended to use something unique as other scripts using ArrayField may overwrite your key file
+	   SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+	   GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like ArrayField to get the key from
+	   Actions = {
+			 [1] = {
+				 Text = 'Click here to copy the key link <--',
+				 OnPress = function()
+					 print('Pressed')
+				 end,
+				 }
+			 },
+	   Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+	}
+ })
+
+ Window:Prompt({
+    Title = 'Kaza Hub',
+    SubTitle = 'Note',
+    Content = 'You cant execute this Hub 2rd times',
+    Actions = {
+        Accept = {
+            Name = 'Accept',
+            Callback = function()
+                print('Pressed')
+            end,
+        }
+    }
+})
+
+ local Main = Window:CreateTab("Main") -- Title, Image
+ local Special = Window:CreateTab("Special") -- Title, Image
+ local Illegal = Window:CreateTab("Illegal") -- Title, Image
+
+--Main
+local Section = Main:CreateSection("Auto Farm",false)
+local Label = Main:CreateLabel("Must be human form",Section)
+local Toggle = Main:CreateToggle({
+	Name = "Auto Farm",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+	_G.UROTM = Value
+	UROTM()
+	end,
+ })
+
+--Teleport
+local Section = Main:CreateSection("Teleport",false)
+local Label = Main:CreateLabel("Teleport to Lobby will make all your items get remove",Section)
+local Button = Main:CreateButton({
+	Name = "Lobby",
+	Interact = 'Click',
+	Callback = function()
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(151, 26, 388)
+	end,
+ })
+
+local Button = Main:CreateButton({
+	Name = "Undertale",
+	Interact = 'Click',
+	Callback = function()
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1438, 933, -1960)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Horrortale",
+	Interact = 'Click',
+	Callback = function()
+	    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1608, 1269, -2078)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Weird Place",
+	Interact = 'Click',
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3401, 966, -905)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Dusttrust Place",
+	Interact = 'Click',
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4804, 1119, -5085)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Judgement Hall",
+	Interact = 'Click',
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1778, 1185, 61)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Anti Void",
+	Interact = 'Click',
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6186, 1716, -295)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "Doodle Sphere",
+	Interact = 'Click',
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4771, 1814, 1646)
+	end,
+ })
+
+ local Button = Main:CreateButton({
+	Name = "City",
+	Interact = 'Click',
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1074, 1409, -4945)
+	end,
+ })
+
+--Special
+local Section = Special:CreateSection("Special",true)
+ local Toggle = Special:CreateToggle({
+	Name = "Hide Name",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+	if _G.name == Value then
+		game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui").BetterHealthBar:FindFirstChild("HealthGui").HealthFrame:FindFirstChild("Name").Visible=true
+		game:GetService("Players").LocalPlayer.Character:WaitForChild("Head").BillboardGui:FindFirstChild("Name").Visible=true
+    else
+		game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui").BetterHealthBar:FindFirstChild("HealthGui").HealthFrame:FindFirstChild("Name").Visible=false
+		game:GetService("Players").LocalPlayer.Character:WaitForChild("Head").BillboardGui:FindFirstChild("Name").Visible=false
+	end
+	end,
+ })
+
+--Illegal
+local Label = Illegal:CreateLabel("THIS HACK IS ILLEGAL")
+local Button = Illegal:CreateButton({
+	Name = "F R E E  A L L  C H A R A C T E R",
+	Interact = 'Click',
+	Callback = function()
+	    for i, v in pairs(game:GetService("Workspace").CHARACTERSTUFF["CHARACTER BOX"]:GetDescendants()) do
+			if v.Name == "Door" and v.Parent then
+				v.Parent:Destroy()
+			end
+		end
+	end,
+ })
+
+end
