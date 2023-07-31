@@ -1,0 +1,5 @@
+local args = {
+   [1] = -9999999,
+   [2] = "All Might",
+}
+game:GetService("ReplicatedStorage").MorphVerify:FireServer(unpack(args))
