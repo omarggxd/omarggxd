@@ -1,0 +1,17 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/omarggxd/omarggxd/main/Maker%20amazing%20omar%20..%20smadi"))()
+local Window = Library.CreateLib("Gaster Hub", "Midnight")
+
+  -- First
+local Tab = Window:NewTab("First")
+local Section = Tab:NewSection("Auto soul & core")
+
+Section:NewButton("autocore", "ButtonInfo", function() 
+getgenv().G = true
+while getgenv().G do
+wait()
+for i = 1,100 do
+game:GetService("Workspace").Give13Core.AddFear:FireServer()
+end
+end
+
+end)
